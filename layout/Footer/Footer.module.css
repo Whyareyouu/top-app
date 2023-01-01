@@ -1,0 +1,43 @@
+.footer {
+	background-color: var(--primary);
+	color: var(--white);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+}
+.footer_wrapper {
+	display: grid;
+	min-height: 72px;
+	padding: 25px 32px;
+	grid-template-rows: auto;
+	column-gap: 40px;
+	grid-template-columns: 1fr auto auto;
+	grid-template-areas: 'author agreement privacy';
+	align-content: center;
+}
+.footer a:hover {
+	color: var(--gray-light);
+}
+.author {
+	grid-area: author;
+}
+.agreement {
+	grid-area: agreement;
+}
+.privacy {
+	grid-area: privacy;
+}
+@media (max-width: 765px) {
+	.footer_wrapper {
+		padding: 32px 0;
+		grid-template-columns: 1fr;
+		row-gap: 10px;
+		column-gap: 0;
+		justify-items: center;
+		grid-template-rows: repeat(3, minmax(23px, 1fr));
+		grid-template-areas:
+			'author'
+			'agreement'
+			'privacy';
+	}
+}
