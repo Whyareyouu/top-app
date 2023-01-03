@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
 import style from './Layout.module.css';
-import cn from 'classnames';
 import { Footer } from './Footer/Footer';
 import { Header } from './Header/Header';
 import { LayoutProps } from './Layout.props';
