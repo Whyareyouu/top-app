@@ -1,4 +1,6 @@
 .textarea {
+	width: 100%;
+	resize: none;
 	padding: 7px 15px;
 	color: var(--black);
 	border: none;

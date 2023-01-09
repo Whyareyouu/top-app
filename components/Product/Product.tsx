@@ -96,7 +96,7 @@ export const Product = ({
 						arrow={isReviewOpened ? 'down' : 'right'}
 						className={style.reviewButton}
 						onClick={() => {
-							product.reviews.length > 0 && setIsReviewOpened(!isReviewOpened);
+							product.reviews && setIsReviewOpened(!isReviewOpened);
 						}}>
 						Читать отзывы
 					</Button>
