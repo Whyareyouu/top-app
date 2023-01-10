@@ -53,7 +53,11 @@ export const Rating = forwardRef(
 			setRating(i);
 		};
 		return (
-			<div {...props} ref={ref}>
+			<div
+				{...props}
+				ref={ref}
+				className={cn(style.starWrapper, { [style.error]: error })}>
+				{error && <span className={style.errorSpan}>{error.message}</span>}
 				{ratingArray.map((r, i) => (
 					<span key={i}>{r}</span>
 				))}

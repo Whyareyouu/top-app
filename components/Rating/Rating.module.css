@@ -1,9 +1,21 @@
 .filed svg {
 	fill: var(--primary);
 }
+.error svg {
+	stroke: var(--red);
+}
 .star svg {
 	margin-right: 5px;
 }
 .editable {
 	cursor: pointer;
+}
+.errorSpan {
+	color: var(--red);
+	position: absolute;
+	bottom: -50px;
+	right: 0;
+}
+.starWrapper {
+	position: relative;
 }
