@@ -29,6 +29,15 @@
 	position: relative;
 	margin-top: 20px;
 }
+.error {
+	background-color: var(--red);
+	padding: 20px;
+	position: relative;
+	margin-top: 20px;
+}
+.error .close path {
+	stroke: var(--red);
+}
 .successTitle {
 	font-weight: bold;
 	border-radius: 5px;

@@ -123,6 +123,9 @@
 	padding: 0;
 	overflow: hidden;
 }
+.rateTitle a {
+	color: var(--primary);
+}
 @media screen and (max-width: 1360px) {
 	.product {
 		display: grid;
